@@ -15,14 +15,13 @@ X <- rbind(X_test, X_train)
 y_test <- read.table("UCI HAR Dataset/test/y_test.txt")
 y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
 
+## Concatenate test and train activities to a single data frame
 y <- rbind(y_test, y_train)
 
-## Concatenate test and train activities to a single data frame
-
+## Load data file containing the subject listing
 subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt")
 subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt")
 
-## Load data file containing the subject listing
 subject <- rbind(subject_test, subject_train)
 names(subject) <- c("subject")
 
