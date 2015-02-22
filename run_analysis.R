@@ -11,7 +11,7 @@ X_train <- read.table("UCI HAR Dataset/train/X_train.txt")
 ## Concatenate test and train data to a single data frame
 X <- rbind(X_test, X_train)
 
-## Locat the test and train activities
+## Load the test and train activities
 y_test <- read.table("UCI HAR Dataset/test/y_test.txt")
 y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
 
